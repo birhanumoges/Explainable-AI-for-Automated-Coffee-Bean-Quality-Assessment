@@ -1,7 +1,8 @@
 # Explainable-AI-for-Automated-Coffee-Bean-Quality-Assessment
 An AI-powered visual inspection system that detects and segments coffee bean defects (Broken, Black, Insect Damage), quantifying their severity and providing explainable decisions for quality control.
 
-//### Coffee Bean Visual Inspection System
+```
+### Coffee Bean Visual Inspection System
                 ┌─────────────────────────┐
                 │   Coffee Bean Image     │
                 │ (Camera / Dataset)      │
@@ -91,5 +92,5 @@ An AI-powered visual inspection system that detects and segments coffee bean def
                 │ Highlights Important Regions of Image    │
                 │ Shows why model predicted defect / grade │
                 └──────────────────────────────────────────┘
-
+```
 
