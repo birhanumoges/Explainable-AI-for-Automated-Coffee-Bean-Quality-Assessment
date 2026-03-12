@@ -37,12 +37,12 @@ An AI-powered visual inspection system that detects and segments coffee bean def
             │ Good Bean Type           │     │ Defect Type Classification│
             │ Classification           │     │ CNN / EfficientNet        │
             │ CNN / Vision Transformer │     │                          │
-            │ Classes:                 │     │ Structural Defects       │
-            │ - Longberry              │     │ Color/Fermentation       │
-            │ - Peaberry               │     │ Biological Damage        │
-            │ - Premium                │     │ Immature Processing      │
-            │ - Green                  │     │ Processing Layer         │
-            │ - Roasted (Light/Medium/Dark) │
+            │ Classes:                 │     │ broken                   │
+            │ - Longberry              │     │ full soure               │
+            │ - Peaberry               │     │ insect damege            │
+            │ - Premium                │     │ Immature       │
+            │ -                  │     │ husk         │
+            │ -  │
             └───────────┬──────────────┘     └───────────┬──────────────┘
                         │                                │
                         ▼                                ▼
@@ -64,9 +64,9 @@ An AI-powered visual inspection system that detects and segments coffee bean def
                                                 ▼
 
                                       ┌─────────────────────┐
-                                      │ Severity Estimation │
-                                      │ Defect Area Ratio   │
-                                      │ Defect Pixels /     │
+                                      │                     │
+                                      │                     │
+                                      │                     │
                                       │ Total Bean Pixels   │
                                       └─────────┬───────────┘
                                                 │
@@ -77,19 +77,18 @@ An AI-powered visual inspection system that detects and segments coffee bean def
                 │ Inputs:                                     │
                 │ - Bean Type (Longberry, Peaberry, etc.)    │
                 │ - Defect Type                               │
-                │ - Defect Severity                           │
-                │ - Color Features                             │
+                │                              │
                 │ - Shape / Texture Features                   │
                 │ Model: Neural Network / Random Forest       │
-                │ Output: Quality Score / Grade               │
-                │ Example Grades: Specialty / Premium / Reject│
+                │                │
+                │ Example Grades: / Premium / Reject│
                 └──────────────┬─────────────────────────────┘
                                │
                                ▼
 
                 ┌──────────────────────────────────────────┐
                 │      Explainable AI (Grad-CAM / LIME)    │
-                │ Highlights Important Regions of Image    │
+                │   │
                 │ Shows why model predicted defect / grade │
                 └──────────────────────────────────────────┘
 ```
